@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Titillium+Web:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>DevWallet</title>
+    
+  </head>
+  <body>
+    <header class="container">
+      <img id="logo" src="./img/logo.svg" alt="DevWallet" />
+      <div>
+        <i data-feather="search"></i>
+        <img
+          id="perfil"
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1&h=1&q=60"
+          alt="jovem"
+        />
+      </div>
+    </header>
+
+    <div id="detalhes" class="container">
+
+      <div class="card">
+        <div>
+          <h2>Total em caixa</h2>
+          <i data-feather="eye"></i>
+        </div>
+        <h3>R$ 9.000,00</h3>
+      </div>
+
+      <div class="card">
+        <div>
+          <h2>Entradas</h2>
+          <i id="in" data-feather="arrow-up-circle" ></i>
+        </div>
+        <h3>R$ 15.000,00</h3>
+      </div>
+
+      <div class="card">
+        <div >
+          <h2>Saída</h2>
+          <i id="out" data-feather="arrow-down-circle" ></i>
+        </div>
+        <h3>R$ 20.000,00</h3>
+      </div>
+   
+    </div>
+
+    <main class="container">
+      <div id="left">
+        <div class="title">
+          <h2>Transações recentes</h2>
+          <a href="#">Exibir todas</a>
+        </div>
+
+        <div id="transactions">
+
+          <div class="transaction">
+            <div class="incoming">
+              <i data-feather="dollar-sign"></i>
+            </div>
+            <h3>Salário Mensal</h3>
+            <span>R$ 6.000,00</span>
+          </div>
+
+          <div class="transaction">
+            <div class="outgoing"><i data-feather="coffee"></i></div>
+            <h3>iFood</h3>
+            <span>R$ 150,00</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="right">
+        <div class="title">
+          <h2>Cotações</h2>
+          <a href="#">Exibir todas</a>
+        </div>
+
+        <div id="quotes">
+          <div class="price">
+            <img src="./img/EUA.png" alt="">
+            <div class="coin">
+              <h3>Dolar Americano</h3>
+              <span>USD</span>
+            </div>
+            <div class="values">
+              <h4>$1,9000</h4>
+              <span><i data-feather="arrow-down"></i> -5,05%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
